@@ -1,0 +1,18 @@
+query base
+
+create database libreria;
+
+use libreria;
+
+
+create table compra(
+id int not null primary key auto_increment ,
+nombre_libro varchar(150) not null,
+editorial  varchar(150) not null,
+precio int not null,
+fecha date not null
+);
+
+insert into compra values(0,"Matematica","santillana", 25,'2021-03-24' );
+
+select * from compra;
